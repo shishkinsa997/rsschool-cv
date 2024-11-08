@@ -1,4 +1,4 @@
-![userpic](https://github.com/shishkinsa997/rsschool-cv/blob/gh-pages/userpic.jpg?raw=true)
+![userpic](https://github.com/shishkinsa997/rsschool-cv/blob/gh-pages/assets/userpic.jpg?raw=true)
 # **Sergey Shishkin**
 
 <u>shishkinsa1997@gmail.com</u> ∙ <u>[github.com/shishkinsa997](https://github.com/shishkinsa997)</u> ∙ <u>[Sergio Rossi (@shishkinsa997)](https://discord.com/users/373909855058001920)</u>
