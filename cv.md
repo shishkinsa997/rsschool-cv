@@ -57,11 +57,11 @@ function deepCopy(obj, copies = new WeakMap()) {
 }
 ```
 ## <u>Learning experience</u>
-**React-app**
-https://github.com/shishkinsa997/esoft/tree/main/react_tasks
-Developed react-app. Worked with components and Vite bundler
+**React-app**  
+https://github.com/shishkinsa997/esoft/tree/main/react_tasks  
+Developed react-app. Worked with components and Vite bundler  
 ## <u>Education</u>
-Esoft. Programming School (2024)
-Hexlet. Python Basics (2023)
+Esoft. Programming School (2024)  
+Hexlet. Python Basics (2023)  
 ## <u>Languages</u>
 English - B1, Russian - native
