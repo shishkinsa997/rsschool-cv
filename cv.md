@@ -1,7 +1,10 @@
 ![userpic](https://github.com/shishkinsa997/rsschool-cv/blob/gh-pages/assets/userpic.jpg?raw=true)
 # **Sergey Shishkin**
 
-<u>shishkinsa1997@gmail.com</u> ∙ <u>[github.com/shishkinsa997](https://github.com/shishkinsa997)</u> ∙ <u>[Sergio Rossi (@shishkinsa997)](https://discord.com/users/373909855058001920)</u>
+## <u>Contacts</u>
+- shishkinsa1997@gmail.com
+- [github.com/shishkinsa997](https://github.com/shishkinsa997)
+- [Sergio Rossi (@shishkinsa997)](https://discord.com/users/373909855058001920)
 
 ---
 ## <u>Summary</u>
@@ -16,7 +19,8 @@
 - **JavaScript** Basic programming skills, working with DOM, Vite assembler.
 - **React** Understanding and ability to work with components and states.
 - **Python** Basic skills. Working with objects.
-- **Git** Fundamentals of the version control system.
+- **Git system** Fundamentals of the version control system.
+
 ## <u>Sample code</u>
 ```js
 function deepCopy(obj, copies = new WeakMap()) {
@@ -43,7 +47,7 @@ function deepCopy(obj, copies = new WeakMap()) {
 
     // Запоминаем оригинал чтобы избежать цикл ссылок
     copies.set(obj, copy);
-    
+
     // Рекурсивное копирование свойств
     for (let key in obj) {
         if (Object.prototype.hasOwnProperty.call(obj, key)) {
@@ -52,16 +56,18 @@ function deepCopy(obj, copies = new WeakMap()) {
     }
     // Сохраняем свойства оригинала
     Object.setPrototypeOf(copy, Object.getPrototypeOf(obj));
-    
+
     return copy;
 }
 ```
 ## <u>Learning experience</u>
-**React-app**  
-https://github.com/shishkinsa997/esoft/tree/main/react_tasks  
-Developed react-app. Worked with components and Vite bundler  
+**React-app**
+[my-react-app](https://shishkinsa997.github.io/esoft)
+Developed react-app. Worked with components and Vite bundler
+
 ## <u>Education</u>
-Esoft. Programming School (2024)  
-Hexlet. Python Basics (2023)  
+Esoft. Programming School (2024)
+Hexlet. Python Basics (2023)
+
 ## <u>Languages</u>
 English - B1, Russian - native
