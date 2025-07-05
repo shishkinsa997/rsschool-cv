@@ -3,9 +3,198 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CV task</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/pepe.ico" type="image/svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>CV Sergey Shishkin</title>
     </head>
     <body>
-        My CV
+        <header>
+            <div style="height: inherit;">
+                <img class="avatar" src="/assets/userpic.jpg" alt="avatar">
+            </div>
+            <div>
+                <h1>
+                    Sergey Shishkin
+                </h1>
+                <p class="profession">
+                    Front End Developer
+                </p>
+            </div>
+        </header>
+        <main>
+            <section class="chips">
+                <div class="chip">
+                    <div class="iconbox">
+                        <img class="icon" src="/assets/map-marker-line-svgrepo-com.svg" alt="map marker">
+                    </div>
+                    <p>
+                        Tyumen
+                    </p>
+                </div>
+                <div class="chip">
+                    <div class="iconbox">
+                        <img class="icon" src="/assets/github-svgrepo-com.svg" alt="github">
+                    </div>
+                    <p>
+                        shishkinsa997
+                    </p>
+                </div>
+                <div class="chip">
+                    <div class="iconbox">
+                        <img class="icon" src="/assets/discord-svgrepo-com.svg" alt="discord">
+                    </div>
+                    <p>
+                        Sergio Rossi
+                    </p>
+                </div>
+                <div class="chip">
+                    <div class="iconbox">
+                        <img class="icon" src="/assets/telegram-svgrepo-com.svg" alt="telegram">
+                    </div>
+                    <p>
+                        @batmanpooop
+                    </p>
+                </div>
+                <div class="chip">
+                    <div class="iconbox">
+                        <img class="icon" src="/assets/email-svgrepo-com.svg" alt="email">
+                    </div>
+                    <p>
+                        shishkinsa1997@gmail.com
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="topic">
+                    <p>
+                        summary
+                    </p>
+                    <div class="underline">
+                    </div>
+                </div>
+                <p>
+                    <b>Aimed</b> to start a career in web development as a front-end developer, gain experience and skills in creating user interfaces.
+                </p>
+                <p>
+                    <b>Plan</b> to develop in the direction of full-stack development in order to become a more versatile specialist who is able to work with both sides — client and server.
+                </p>
+                <p>
+                    <b>Strong</b> in the rapid learning and academic performance of new technologies with their application in practice. I am open to any tasks and requirements in projects. I am constantly striving to write clean and maintainable code.
+                </p>
+            </section>
+            <section class="section">
+                <div class="topic">
+                    <p>
+                        skills
+                    </p>
+                    <div class="underline">
+                    </div>
+                </div>
+                <div class="chips">
+                    <div class="chip">
+                        <div class="iconbox">
+                            <img class="icon" src="/assets/browser-code-svgrepo-com.svg" alt="layout">
+                        </div>
+                        <p>
+                            HTML/CSS
+                        </p>
+                    </div>
+                    <div class="chip">
+                        <div class="iconbox">
+                            <img class="icon" src="/assets/git-svgrepo-com.svg" alt="git">
+                        </div>
+                        <p>
+                            Git system
+                        </p>
+                    </div>
+                    <div class="chip">
+                        <div class="iconbox">
+                            <img class="icon" src="/assets/python_icon_244971.svg" alt="python">
+                        </div>
+                        <p>
+                            Python
+                        </p>
+                    </div>
+                    <div class="chip">
+                        <div class="iconbox">
+                            <img class="icon" src="/assets/java-script-svgrepo-com.svg" alt="java script">
+                        </div>
+                        <p>
+                            Java Script
+                        </p>
+                    </div>
+                    <div class="chip">
+                        <div class="iconbox">
+                            <img class="icon" src="/assets/react-svgrepo-com.svg" alt="react">
+                        </div>
+                        <p>
+                            React
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="topic">
+                    <p>
+                        sample code
+                    </p>
+                    <div class="underline">
+                    </div>
+                </div>
+                <pre><code>function deepCopy(obj, copies = new WeakMap()) {
+    // Проверка на примитив
+    if (typeof obj !== 'object' || obj === null) {
+        return obj;
+    }
+    // Проверка на циклические ссылки
+    if (copies.has(obj)) {
+        return copies.get(obj);
+    }
+    // Проверка и обработка на Date, Map, Set
+    if (obj instanceof Date) {
+        return new Date(obj);
+    }
+    if (obj instanceof Map) {
+        return new Map(Array.from(obj, ([key, val]) => [deepCopy(key, copies), deepCopy(val, copies)]));
+    }
+    if (obj instanceof Set) {
+        return new Set(Array.from(obj, val => deepCopy(val, copies)));
+    }
+    // Создаем новый объект или массив для глубокого копирования
+    const copy = Array.isArray(obj) ? [] : {};
+
+    // Запоминаем оригинал чтобы избежать цикл ссылок
+    copies.set(obj, copy);
+
+    // Рекурсивное копирование свойств
+    for (let key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            copy[key] = deepCopy(obj[key], copies);
+        }
+    }
+    // Сохраняем свойства оригинала
+    Object.setPrototypeOf(copy, Object.getPrototypeOf(obj));
+
+    return copy;
+}                </pre></code>
+            </section>
+            <section class="section">
+                <div class="topic">
+                    <p>
+                        learning experience
+                    </p>
+                    <div class="underline">
+                    </div>
+                </div>
+                <a href="https://shishkinsa997.github.io/esoft"><b>my-react-app</b></a>
+                <p>
+                    Developed react-app. Worked with components and Vite bundler
+                </p>
+                <iframe src="https://shishkinsa997.github.io/esoft"></iframe>
+            </section>
+        </main>
     </body>
 </html>
