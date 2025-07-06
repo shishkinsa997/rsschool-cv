@@ -13,10 +13,9 @@ body {
     max-width: 720px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 24px 24px;
     justify-content: center;
     transition: color 0.3s ease;
-
 }
 
 header{
@@ -24,7 +23,7 @@ header{
     justify-content: left;
     align-items: end;
     height: 150px;
-    padding: 16px 0;
+    padding-bottom: 16px;
     margin-bottom: 8px;
     gap: 16px;
 }
@@ -132,4 +131,10 @@ iframe {
     height: 500px;
     border: none;
     border-radius: 16px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
