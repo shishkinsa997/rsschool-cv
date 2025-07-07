@@ -125,15 +125,16 @@ section + section {
 }
 
 pre {
-    background: #f4f4f4;
+    background-color: #fffcf1;
     padding: 15px;
     border-radius: 16px;
     overflow-x: auto;
+    border: 2px solid rgb(255, 225, 169);
 }
 
 code {
-    color: #470011;
-    background: #f9f2f4;
+    color: #000000;
+    background: fffcf1;
     padding: 2px 4px;
     border-radius: 16px;
 }
