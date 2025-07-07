@@ -159,10 +159,10 @@
         return new Date(obj);
     }
     if (obj instanceof Map) {
-        return new Map(Array.from(obj, ([key, val]) => [deepCopy(key, copies), deepCopy(val, copies)]));
+        return new Map(Array.from(obj, ([key, val]) =&gt [deepCopy(key, copies), deepCopy(val, copies)]));
     }
     if (obj instanceof Set) {
-        return new Set(Array.from(obj, val => deepCopy(val, copies)));
+        return new Set(Array.from(obj, val =&gt deepCopy(val, copies)));
     }
     // Создаем новый объект или массив для глубокого копирования
     const copy = Array.isArray(obj) ? [] : {};
@@ -194,7 +194,7 @@
                 <p>
                     Developed react-app. Worked with components and Vite bundler
                 </p>
-                <iframe src="https://shishkinsa997.github.io/esoft"></iframe>
+                <iframe src="https://shishkinsa997.github.io/esoft" title="project"></iframe>
             </section>
             <section class="section">
                 <div class="topic">
