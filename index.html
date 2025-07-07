@@ -162,7 +162,7 @@
         return new Map(Array.from(obj, ([key, val]) =&gt [deepCopy(key, copies), deepCopy(val, copies)]));
     }
     if (obj instanceof Set) {
-        return new Set(Array.from(obj, val =&gt deepCopy(val, copies)));
+        return new Set(Array.from(obj, val =&gt; deepCopy(val, copies)));
     }
     // Создаем новый объект или массив для глубокого копирования
     const copy = Array.isArray(obj) ? [] : {};
