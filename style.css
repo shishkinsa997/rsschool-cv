@@ -18,6 +18,12 @@ body {
     transition: color 0.3s ease;
 }
 
+img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
 header{
     display: flex;
     justify-content: left;
@@ -34,6 +40,10 @@ h1 {
     padding-bottom: 0.2em;
 }
 
+h3 {
+    display: none;
+}
+
 .profession {
     opacity: 0.5;
 }
@@ -45,7 +55,8 @@ h1 {
 }
 
 .avatar {
-    height: inherit;;
+    height: 150px;
+    width: 150px;
     border-radius: 15%;
 }
 
@@ -93,7 +104,7 @@ h1 {
     margin-top: 30px;
 }
 
-.topic p {
+h2 {
     text-transform: uppercase;
     font-weight: 800;
     font-size: large;
