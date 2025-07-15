@@ -15,13 +15,11 @@ body {
     margin: 32px;
     background-color: rgb(255, 255, 233);
     max-width: 720px;
-    width: 100%;
     margin: 0 auto;
     padding: 24px 24px;
     justify-content: center;
     scroll-behavior: smooth;
     transition: color 0.3s ease;
-
 }
 
 img {
@@ -44,6 +42,8 @@ nav ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 a {
