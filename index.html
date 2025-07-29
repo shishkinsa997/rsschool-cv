@@ -206,7 +206,10 @@
                 <p>
                     Developed react-app. Worked with components and Vite bundler
                 </p>
-                <iframe src="https://shishkinsa997.github.io/esoft" title="project"></iframe>
+                <div class="project-wrapper">
+                    <iframe src="https://shishkinsa997.github.io/esoft" title="project" class="project"></iframe>
+                    <div class="overlay"></div>
+                </div>
             </section>
             <section id="education">
                 <div class="topic">
@@ -234,6 +237,15 @@
                     <li>Russian - native</li>
                 </ul>
             </section>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <span id="theme-text"></span>
+                <span id="moon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="hidden dark:block cursor-pointer"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9a9 9 0 1 1-9-9"></path></svg></span>
+                <span id="sun"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="dark:hidden cursor-pointer"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></g></svg></span>
+            </div>
         </main>
         <footer>
                 <a  href="https://github.com/shishkinsa997" target="_blank">
@@ -249,9 +261,10 @@
                 </p>
                 <a href="https://rs.school/courses/javascript-ru" target="_blank">
                     <div>
-                        <img class="icon" src="./assets/rs-school-logo.svg" alt="rs-school">
+                        <img class="icon" id="rss" src="./assets/rs-school-logo.svg" alt="rs-school">
                     </div>
                 </a>
         </footer>
+    <script src="script.js"></script>
     </body>
 </html>
