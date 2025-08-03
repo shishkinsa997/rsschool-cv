@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="prism-theme" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./assets/pepe.ico" type="image/svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -157,7 +158,7 @@
                     <div class="underline">
                     </div>
                 </div>
-                <pre><code>function deepCopy(obj, copies = new WeakMap()) {
+                <pre><code class="language-javascript">function deepCopy(obj, copies = new WeakMap()) {
     // Проверка на примитив
     if (typeof obj !== 'object' || obj === null) {
         return obj;
@@ -171,7 +172,8 @@
         return new Date(obj);
     }
     if (obj instanceof Map) {
-        return new Map(Array.from(obj, ([key, val]) =&gt; [deepCopy(key, copies), deepCopy(val, copies)]));
+        return new Map(Array.from(obj, ([key, val]) =&gt;
+        [deepCopy(key, copies), deepCopy(val, copies)]));
     }
     if (obj instanceof Set) {
         return new Set(Array.from(obj, val =&gt; deepCopy(val, copies)));
@@ -220,8 +222,9 @@
                     </div>
                 </div>
                     <ul>
-                        <li>Esoft. Programming School (2024)</li>
                         <li>Hexlet. Python Basics (2023)</li>
+                        <li>Esoft. Programming School (2024)</li>
+                        <li>RS School. Front-end stage 0 (2025)</li>
                     </ul>
             </section>
             <section id="languages">
@@ -250,7 +253,7 @@
         <footer>
                 <a  href="https://github.com/shishkinsa997" target="_blank">
                     <div>
-                        <img class="icon" src="./assets/github-svgrepo-com.svg" alt="github">
+                        <img class="icon" id="gh" src="./assets/github-svgrepo-com.svg" alt="github">
                     </div>
                     <p class="opacity7">
                         GitHub
@@ -265,6 +268,8 @@
                     </div>
                 </a>
         </footer>
-    <script src="script.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+    <script defer="defer" src="script.js"></script>
     </body>
 </html>

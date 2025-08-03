@@ -137,28 +137,25 @@ h2 {
 .underline {
     margin: 5px 8px;
     box-sizing: border-box;
-    border: 2px solid rgb(187, 187, 187);
+    border: 2px solid #999;
     border-radius: 2px;
 }
 
 section + section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     margin-bottom: 5px;
 }
 
 pre {
-    background-color: #fffcf1;
     padding: 15px;
     border-radius: 16px;
     overflow-x: auto;
-    border: 2px solid #fdeca6;
+    border: 2px solid #ffe;
 }
 
 code {
-    color: #000000;
-    background: #fffcf1;
     padding: 2px 4px;
     border-radius: 16px;
 }
@@ -166,7 +163,7 @@ code {
 .project {
     height: 500px;
     width: 100%;
-    border: 2px solid #fdeca6;
+    border: 2px solid #ffe;
     border-radius: 16px;
     overflow: hidden;
     pointer-events: none;
@@ -175,7 +172,7 @@ code {
 section ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 16px;
 }
 
 li {
@@ -304,13 +301,7 @@ body.dark-theme {
 }
 
 .dark-theme pre {
-    background-color: #212529;
     border: 2px solid #16191c;
-}
-
-.dark-theme code {
-    color: #babec2;
-    background: #212529;
 }
 
 .dark-theme iframe {
@@ -328,6 +319,10 @@ body.dark-theme {
     z-index: 1;
 }
 
-.dark-theme #rss {
-    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+.dark-theme #rss, .dark-theme #gh {
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.7));
+}
+
+.token.operator {
+    background: none;
 }
