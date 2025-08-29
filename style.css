@@ -1,6 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 :root {
@@ -170,16 +177,30 @@ section + section {
     margin-bottom: 5px;
 }
 
+.samples {
+    display: flex;
+    gap: 20px;
+}
+
+pre:hover  {
+    flex: 6;
+}
+
 pre {
     padding: 15px;
     border-radius: 16px;
-    overflow-x: auto;
+    overflow: auto;
     border: var(--border);
+    height: 500px;
+    transition: all 0.3s ease-in-out;
+    flex: 1;
 }
 
 code {
     padding: 2px 4px;
     border-radius: 16px;
+        transition: all 0.3s ease-in-out;
+
 }
 
 section ul {
@@ -231,7 +252,7 @@ section ul {
     height: 70px;
     left: 0;
     bottom: -55px;
-    background-color: #fff;
+    background-color: #f5f2f0;
     padding: 16px;
     transition: all 0.3s ease-in-out;
     z-index: 1;
@@ -239,10 +260,6 @@ section ul {
 
 .project:hover > .project-info {
     bottom: 0;
-}
-
-.project:hover > .project-preview {
-    /* transform: scale(1.1); */
 }
 
 .project-title {
