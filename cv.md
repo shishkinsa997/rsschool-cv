@@ -55,8 +55,8 @@ function areObjectsEqual(obj1, obj2) {
 }
 ```
 ## <u>Learning experience</u>
-**React-app**
-[my-react-app](https://shishkinsa997.github.io/esoft)
+
+[React-app](https://shishkinsa997.github.io/esoft)
 Developed react-app. Worked with components and Vite bundler
 
 [Museum Louvre](https://rolling-scopes-school.github.io/shishkinsa997-JSFEPRESCHOOL2025Q2/museum/)
@@ -69,10 +69,10 @@ Test project online sandbox for code compiled in Vite bundler
 SPA built as part of the not-fight-club task on stage #0 RS school
 
 ## <u>Education</u>
-Hexlet. Python Basics (2023)
-Esoft. Programming School (2024)
-RS School. Front-end stage #0 (2025)
-HTML Academy. Immersion in JavaScript (2025)
+- Hexlet. Python Basics (2023)
+- Esoft. Programming School (2024)
+- RS School. Front-end stage #0 (2025)
+- HTML Academy. Immersion in JavaScript (2025)
 
 ## <u>Languages</u>
 English - B1, Russian - native
