@@ -5,6 +5,7 @@
 - shishkinsa1997@gmail.com
 - [github.com/shishkinsa997](https://github.com/shishkinsa997)
 - [Sergio Rossi (@shishkinsa997)](https://discord.com/users/373909855058001920)
+- [@batmanpooop](https://t.me/batmanpooop)
 
 ---
 ## <u>Summary</u>
@@ -23,41 +24,34 @@
 
 ## <u>Sample code</u>
 ```js
-function deepCopy(obj, copies = new WeakMap()) {
-    // Проверка на примитив
-    if (typeof obj !== 'object' || obj === null) {
-        return obj;
-    }
-    // Проверка на циклические ссылки
-    if (copies.has(obj)) {
-        return copies.get(obj);
-    }
-    // Проверка и обработка на Date, Map, Set
-    if (obj instanceof Date) {
-        return new Date(obj);
-    }
-    if (obj instanceof Map) {
-        return new Map(Array.from(obj, ([key, val]) => [deepCopy(key, copies), deepCopy(val, copies)]));
-    }
-    if (obj instanceof Set) {
-        return new Set(Array.from(obj, val => deepCopy(val, copies)));
-    }
-    // Создаем новый объект или массив для глубокого копирования
-    const copy = Array.isArray(obj) ? [] : {};
+function areObjectsEqual(obj1, obj2) {
 
-    // Запоминаем оригинал чтобы избежать цикл ссылок
-    copies.set(obj, copy);
+  const keys1 = Object.keys(obj1)
+  const keys2 = Object.keys(obj2)
 
-    // Рекурсивное копирование свойств
-    for (let key in obj) {
-        if (Object.prototype.hasOwnProperty.call(obj, key)) {
-            copy[key] = deepCopy(obj[key], copies);
-        }
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+
+  for (const key in obj1) {
+
+    const value1 = obj1[key];
+    const value2 = obj2[key];
+
+    const areValuesObjects =
+      typeof value1 === 'object' &&
+      typeof value2 === 'object';
+
+    if (areValuesObjects) {
+      return areObjectsEqual(value1, value2)
     }
-    // Сохраняем свойства оригинала
-    Object.setPrototypeOf(copy, Object.getPrototypeOf(obj));
 
-    return copy;
+    if (value1 !== value2) {
+      return false;
+    }
+  }
+
+  return true;
 }
 ```
 ## <u>Learning experience</u>
@@ -65,9 +59,20 @@ function deepCopy(obj, copies = new WeakMap()) {
 [my-react-app](https://shishkinsa997.github.io/esoft)
 Developed react-app. Worked with components and Vite bundler
 
+[Museum Louvre](https://rolling-scopes-school.github.io/shishkinsa997-JSFEPRESCHOOL2025Q2/museum/)
+One-page layout project developed on stage #0 RS school
+
+[Mini Sandbox](https://sandbox-mini.vercel.app/)
+Test project online sandbox for code compiled in Vite bundler
+
+[Happy House](https://shishkinsa997.github.io/not-fight-club/)
+SPA built as part of the not-fight-club task on stage #0 RS school
+
 ## <u>Education</u>
-Esoft. Programming School (2024)
 Hexlet. Python Basics (2023)
+Esoft. Programming School (2024)
+RS School. Front-end stage #0 (2025)
+HTML Academy. Immersion in JavaScript (2025)
 
 ## <u>Languages</u>
 English - B1, Russian - native
