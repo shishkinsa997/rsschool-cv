@@ -14,9 +14,9 @@
     </head>
     <body>
         <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
+            <label class="theme-switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
             </label>
             <span id="theme-text"></span>
             <span id="moon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="hidden dark:block cursor-pointer"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9a9 9 0 1 1-9-9"></path></svg></span>
@@ -222,7 +222,7 @@
     const value2 = obj2[key];
 
     const areValuesObjects =
-      typeof value1 === 'object' &&
+      typeof value1 === 'object' &amp;&amp;
       typeof value2 === 'object';
 
     if (areValuesObjects) {
@@ -288,10 +288,6 @@
                         </div>
                     </a>
                 </div>
-                <!-- <div class="project-wrapper">
-                    <iframe src="https://shishkinsa997.github.io/esoft" title="project" class="project"></iframe>
-                    <div class="overlay"></div>
-                </div> -->
             </section>
             <section id="education">
                 <div class="topic">
@@ -340,8 +336,8 @@
                     </div>
                 </a>
         </footer>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
-    <script defer="defer" src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+    <script defer src="script.js"></script>
     </body>
 </html>
