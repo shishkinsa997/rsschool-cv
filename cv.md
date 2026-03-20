@@ -1,4 +1,3 @@
-![userpic](https://github.com/shishkinsa997/rsschool-cv/blob/gh-pages/assets/userpic.jpg?raw=true)
 # **Sergey Shishkin**
 
 ## <u>Contacts</u>
