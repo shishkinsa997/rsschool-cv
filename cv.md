@@ -4,8 +4,8 @@
 ## <u>Contacts</u>
 - shishkinsa1997@gmail.com
 - [github.com/shishkinsa997](https://github.com/shishkinsa997)
-- [Sergio Rossi (@shishkinsa997)](https://discord.com/users/373909855058001920)
-- [@batmanpooop](https://t.me/batmanpooop)
+- [Discord (@shishkinsa997)](https://discord.com/users/373909855058001920)
+- [Telegram](https://t.me/syntax_shuga)
 
 ---
 ## <u>Summary</u>
@@ -56,23 +56,23 @@ function areObjectsEqual(obj1, obj2) {
 ```
 ## <u>Learning experience</u>
 
-[React-app](https://shishkinsa997.github.io/esoft)
-Developed react-app. Worked with components and Vite bundler
-
-[Museum Louvre](https://rolling-scopes-school.github.io/shishkinsa997-JSFEPRESCHOOL2025Q2/museum/)
-One-page layout project developed on stage #0 RS school
-
-[Mini Sandbox](https://sandbox-mini.vercel.app/)
-Test project online sandbox for code compiled in Vite bundler
-
 [Happy House](https://shishkinsa997.github.io/not-fight-club/)
-SPA built as part of the not-fight-club task on stage #0 RS school
+Turn-based combat game with zone strategy, crits, and battle log.
+
+[Courses Platform](https://shishkinsa997.github.io/system/)
+SPA platform with i18n, Firebase, and interactive course dashboard.
+
+[Louvre Museum](https://shishkinsa997.github.io/museum/museum/)
+Art gallery with video player, interactive map, and ticket form
+
+[Pair 'Em Up](https://shishkinsa997.github.io/pair-em-up/)
+Number-matching puzzle game with 3 modes, assist tools, and local saves.
 
 ## <u>Education</u>
 - Hexlet. Python Basics (2023)
 - Esoft. Programming School (2024)
-- RS School. Front-end stage #0 (2025)
-- HTML Academy. Immersion in JavaScript (2025)
+- RS School. Front-end stage #1 (2025)
+- Glo Academy. JS + React (2026)
 
 ## <u>Languages</u>
 English - B1, Russian - native
