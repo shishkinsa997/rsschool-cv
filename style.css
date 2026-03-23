@@ -86,7 +86,7 @@ h1 {
     padding-bottom: 0.2em;
 }
 
-h3 {
+.hidden {
     display: none;
 }
 
@@ -129,6 +129,11 @@ li {
     border-radius: 50%;
     background-color: #fff;
 
+}
+
+.major {
+    font-weight: 400;
+    text-transform: none;
 }
 
 .chip {
